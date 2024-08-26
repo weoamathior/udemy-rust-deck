@@ -17,8 +17,8 @@ impl Deck {
             }
         }
 
-        let deck = Deck { cards };
-        return deck;
+        // implicit return - remember to drop the semicolon
+        Deck{cards}
     }
 }
 fn main() {
