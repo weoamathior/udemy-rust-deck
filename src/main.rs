@@ -17,11 +17,17 @@ impl Deck {
             }
         }
 
-        // implicit return - remember to drop the semicolon
+        // implicit return - remember to drop the semicoln
         Deck{cards}
+    }
+
+    fn shuffle(&self) {
+
     }
 }
 fn main() {
     let deck = Deck::new();
+    deck.shuffle()
+
     println!("Here's your deck: {:#?}", deck);
 }
